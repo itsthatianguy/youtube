@@ -1,0 +1,5 @@
+config:
+  aws:region: eu-west-2
+  fastapi-deployment:db_password:
+    secure: AAABAHucFWEbQn0lnL0/pRGRRRrGpK4tnOXW9xohac91ZQse0Bnibh2L8f3f4i8=
+  fastapi-deployment:db_username: postgres
