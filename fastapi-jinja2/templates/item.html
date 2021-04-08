@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <title>Item Details</title>
+        <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <img src="{{ url_for('static', path='/fastapi.png') }}" alt="FastAPI">
+        <h1>is awesome!</h1>
+        <p>Path for item ID: {{ id }}</p>
+    </body>
+</html>
