@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <script src="https://js.stripe.com/v3/"></script>
+        <script src="{{ url_for('static', path='script.js') }}"></script>
+    </head>
+    <body>
+        <button id="checkout-premium">Subscribe Premium</button>
+        <button id="checkout-basic">Subscribe Basic</button>
+        {% if hasCustomer %}
+        <button id="manage-billing">Manage Billing</button>
+        {% endif %}
+    </body>
+</html>
