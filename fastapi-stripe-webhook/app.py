@@ -65,7 +65,7 @@ async def create_portal_session():
 
 
 @app.post("/webhook")
-async def webhook_received(request: Request, stripe_signature: str = Header(str)):
+async def webhook_received(request: Request, stripe_signature: str = Header(None)):
     webhook_secret = os.environ["STRIPE_WEBHOOK_SECRET"]
     data = await request.body()
     try:
